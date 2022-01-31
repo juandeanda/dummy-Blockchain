@@ -1,0 +1,12 @@
+RegistroContract = web3.eth.contract([{"constant":false,"inputs":[{"name":"fileHash","type":"string"}],"name":"get","outputs":[{"name":"timestamp","type":"uint256"},{"name":"propietario","type":"string"},{"name":"nombreProy","type":"string"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"propietario","type":"string"},{"name":"fileHash","type":"string"},{"name":"nombreProy","type":"string"}],"name":"set","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}])
+var RegistroContract = web3.eth.contract([{"inputs": [{"internalType": "uint256", "name": "a","type": "uint256"}], "name": "multiply", "outputs": [{"internalType": "uint256","name": "","type": "uint256"}],"stateMutability": "pure","type": "function"}])
+RegistroContract = web3.eth.contract([{"inputs":[{"internalType":"uint256","name":"a","type":"uint256"}],"name":"multiply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"pure","type":"function"}])
+RegistroContract
+Registro = RegistroContract.at("0x54861C1Da211eb17D70A8bAd6A38B151528105C6")
+Registro.multiply.call(1)
+Registro.multiply.call(2)
+Registro.multiply.call(4)
+Registro.multiply.call(2)
+RegistroContract = web3.eth.contract([{"inputs":[{"internalType":"uint256","name":"a","type":"uint256"}],"name":"multiply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"pure","type":"function"}])
+Registro = RegistroContract.at("0x54861C1Da211eb17D70A8bAd6A38B151528105C6")
+Registro.multiply.call(2)
